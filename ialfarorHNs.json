@@ -1,0 +1,16 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 1039711,
+        "cnameFrom": "rolotest1.crtestns.com.edgekey-staging.net",
+        "cnameTo": "rolotest1.crtestns.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
+    },
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 1039711,
+        "cnameFrom": "www.ialfaror.training.ranet.me",
+        "cnameTo": "rolotest1.crtestns.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]
