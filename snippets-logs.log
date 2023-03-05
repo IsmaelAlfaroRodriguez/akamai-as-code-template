@@ -2787,3 +2787,1965 @@
     } ]
   }
 }
+[2023-03-05T16:12:13.940] [INFO] devops-prov.factory - Switching account key to: '1-6JHGX'
+[2023-03-05T16:12:13.942] [INFO] devops-prov.factory - Switching account key to: '1-6JHGX'
+[2023-03-05T16:12:13.942] [INFO] devops-prov.factory - Using credentials file: '/Users/ialfaror/.edgerc', section: 'papi'
+[2023-03-05T16:12:45.447] [INFO] devops-prov.factory - Switching account key to: '1-6JHGX'
+[2023-03-05T16:12:45.448] [INFO] devops-prov.factory - Switching account key to: '1-6JHGX'
+[2023-03-05T16:12:45.448] [INFO] devops-prov.factory - Using credentials file: '/Users/ialfaror/.edgerc', section: 'papi'
+[2023-03-05T16:12:45.449] [INFO] devops-prov.factory - need to create papi
+[2023-03-05T16:12:45.451] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2023-03-05T16:12:45.455] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:45+0000;nonce=70e94c45-d4da-44c3-92c9-0fcdf4abd717;
+
+[2023-03-05T16:12:45.455] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"ialfaror.devops.ranet_pm"}"
+[2023-03-05T16:12:45.455] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 43
+[2023-03-05T16:12:45.455] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"ialfaror.devops.ranet_pm"}"
+[2023-03-05T16:12:45.455] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"ialfaror.devops.ranet_pm"}
+[2023-03-05T16:12:45.456] [INFO] devops-prov.edgegrid.helpers - Content hash is "7OTDgUYbeHNaBgaAGko/9ps6iYY5qnMcuPjqHxhZvm0="
+[2023-03-05T16:12:45.456] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=1-6JHGX		7OTDgUYbeHNaBgaAGko/9ps6iYY5qnMcuPjqHxhZvm0=	EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:45+0000;nonce=70e94c45-d4da-44c3-92c9-0fcdf4abd717;" 
+
+[2023-03-05T16:12:45.456] [INFO] devops-prov.edgegrid.helpers - Signing key: LnDBWwHFdvtnEEqx7lKPt5+N6rUkafVFRlYSGKWYlew=
+
+[2023-03-05T16:12:45.456] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:45+0000;nonce=70e94c45-d4da-44c3-92c9-0fcdf4abd717;signature=tHzzr1dL9tSnbQgKD3SpmWPPfHD/KeTODQoJ/CMT2N8=
+
+[2023-03-05T16:12:45.475] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=1-6JHGX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:45+0000;nonce=70e94c45-d4da-44c3-92c9-0fcdf4abd717;signature=tHzzr1dL9tSnbQgKD3SpmWPPfHD/KeTODQoJ/CMT2N8=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net',
+    'content-length': 43
+  },
+  body: '{"propertyName":"ialfaror.devops.ranet_pm"}'
+}
+[2023-03-05T16:12:48.374] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'bf23c6b4-a815-47f1-b6fd-e099d080b9db, bf23c6b4-a815-47f1-b6fd-e099d080b9db',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept-encoding',
+    'x-trace-id': '91ca640513d913e7',
+    'content-length': '488',
+    date: 'Sun, 05 Mar 2023 22:12:48 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_1-6JHGX",\n' +
+    '      "contractId" : "ctr_1-1NC95D",\n' +
+    '      "assetId" : "aid_11121212",\n' +
+    '      "groupId" : "grp_229585",\n' +
+    '      "propertyId" : "prp_884795",\n' +
+    '      "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '      "propertyVersion" : 2,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-04T05:21:55Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE",\n' +
+    '      "note" : "RoutingLogic"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:12:48.375] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:12:48.375] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_1-6JHGX",
+      "contractId" : "ctr_1-1NC95D",
+      "assetId" : "aid_11121212",
+      "groupId" : "grp_229585",
+      "propertyId" : "prp_884795",
+      "propertyName" : "ialfaror.devops.ranet_pm",
+      "propertyVersion" : 2,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-04T05:21:55Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE",
+      "note" : "RoutingLogic"
+    } ]
+  }
+}
+[2023-03-05T16:12:48.377] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/versions/latest
+[2023-03-05T16:12:48.377] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:48+0000;nonce=9e1b8a3d-f6ae-494a-84b9-918b049a7849;
+
+[2023-03-05T16:12:48.377] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:48.377] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:48.377] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/latest?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:48+0000;nonce=9e1b8a3d-f6ae-494a-84b9-918b049a7849;" 
+
+[2023-03-05T16:12:48.377] [INFO] devops-prov.edgegrid.helpers - Signing key: GjzlAuFZNky2yMFRcBWgQbHkGUh05qzBG62IoQy52zk=
+
+[2023-03-05T16:12:48.377] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:48+0000;nonce=9e1b8a3d-f6ae-494a-84b9-918b049a7849;signature=1OnEwLDA/i3KzIO3axPMan+wSb+K/3i/4Ejz9Qr9Gic=
+
+[2023-03-05T16:12:48.378] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/latest?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:48+0000;nonce=9e1b8a3d-f6ae-494a-84b9-918b049a7849;signature=1OnEwLDA/i3KzIO3axPMan+wSb+K/3i/4Ejz9Qr9Gic=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:49.394] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '03a8967f-6fc3-457b-a728-1091b894dc4a, 03a8967f-6fc3-457b-a728-1091b894dc4a',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '94e5640513e013e8',
+    'content-length': '90',
+    date: 'Sun, 05 Mar 2023 22:12:49 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:12:49.395] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=5d40de85-fac0-4600-9437-b4e1cc8712fd;
+
+[2023-03-05T16:12:49.395] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:49.396] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:49.396] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=5d40de85-fac0-4600-9437-b4e1cc8712fd;" 
+
+[2023-03-05T16:12:49.396] [INFO] devops-prov.edgegrid.helpers - Signing key: sBWpf943w+2uv7Op84CJh/a3RYhoRRdWYHgJ1Jfkt20=
+
+[2023-03-05T16:12:49.396] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=5d40de85-fac0-4600-9437-b4e1cc8712fd;signature=GCUorzexxPwKSgl6VRQQvcsGn5WIBZunVzLLRaCI/nU=
+
+[2023-03-05T16:12:49.397] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=5d40de85-fac0-4600-9437-b4e1cc8712fd;signature=GCUorzexxPwKSgl6VRQQvcsGn5WIBZunVzLLRaCI/nU=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:49.835] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'aaac2ebb-79f4-4e60-a316-a47b4667a1de, aaac2ebb-79f4-4e60-a316-a47b4667a1de',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '9833640513e113e9',
+    'content-length': '122',
+    date: 'Sun, 05 Mar 2023 22:12:50 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:12:49.836] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=7dc4595a-004a-4a59-9640-8c61a02ca05e;
+
+[2023-03-05T16:12:49.836] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:49.836] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:49.836] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=7dc4595a-004a-4a59-9640-8c61a02ca05e;" 
+
+[2023-03-05T16:12:49.837] [INFO] devops-prov.edgegrid.helpers - Signing key: sBWpf943w+2uv7Op84CJh/a3RYhoRRdWYHgJ1Jfkt20=
+
+[2023-03-05T16:12:49.837] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=7dc4595a-004a-4a59-9640-8c61a02ca05e;signature=xTh8mBUY5MICYuYEHvYfRoRTZ3SYRMzVRH+kO/zFnD8=
+
+[2023-03-05T16:12:49.838] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:49+0000;nonce=7dc4595a-004a-4a59-9640-8c61a02ca05e;signature=xTh8mBUY5MICYuYEHvYfRoRTZ3SYRMzVRH+kO/zFnD8=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:50.827] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'bf23c6b4-a815-47f1-b6fd-e099d080b9db, bf23c6b4-a815-47f1-b6fd-e099d080b9db',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': '9692640513e1143f',
+    'content-length': '593',
+    date: 'Sun, 05 Mar 2023 22:12:50 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884795",\n' +
+    '  "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "assetId" : "aid_11121212",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 2,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-04T05:21:55Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE",\n' +
+    '      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",\n' +
+    '      "productId" : "prd_Fresca",\n' +
+    '      "ruleFormat" : "v2022-06-28",\n' +
+    '      "note" : "RoutingLogic"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:12:50.828] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:12:50.828] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884795",
+  "propertyName" : "ialfaror.devops.ranet_pm",
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "assetId" : "aid_11121212",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 2,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-04T05:21:55Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE",
+      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",
+      "productId" : "prd_Fresca",
+      "ruleFormat" : "v2022-06-28",
+      "note" : "RoutingLogic"
+    } ]
+  }
+}
+[2023-03-05T16:12:50.828] [INFO] pm-cli - Attempting to load rule tree for property id: 884795 and version: 2
+[2023-03-05T16:12:50.828] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/client-settings
+[2023-03-05T16:12:50.829] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:50+0000;nonce=b2d8454c-9323-4567-9670-e943ebe7be33;
+
+[2023-03-05T16:12:50.829] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:50.829] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:50.829] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/client-settings?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:50+0000;nonce=b2d8454c-9323-4567-9670-e943ebe7be33;" 
+
+[2023-03-05T16:12:50.829] [INFO] devops-prov.edgegrid.helpers - Signing key: e3XiRYXHbTS51jWu1elOIUTezI1mqwPzzXexzbvbJdA=
+
+[2023-03-05T16:12:50.829] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:50+0000;nonce=b2d8454c-9323-4567-9670-e943ebe7be33;signature=Y9Mjys8egI0xd3b4uer0P8uKtZFxbAVedrGzM5oE9Sg=
+
+[2023-03-05T16:12:50.830] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/client-settings?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:50+0000;nonce=b2d8454c-9323-4567-9670-e943ebe7be33;signature=Y9Mjys8egI0xd3b4uer0P8uKtZFxbAVedrGzM5oE9Sg=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:51.130] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'bf23c6b4-a815-47f1-b6fd-e099d080b9db, bf23c6b4-a815-47f1-b6fd-e099d080b9db',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': '998b640513e313b9',
+    'content-length': '58',
+    date: 'Sun, 05 Mar 2023 22:12:51 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n  "ruleFormat" : "v2022-06-28",\n  "usePrefixes" : true\n}'
+}
+[2023-03-05T16:12:51.130] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:12:51.130] [INFO] devops-prov.openclient - Body:  {
+  "ruleFormat" : "v2022-06-28",
+  "usePrefixes" : true
+}
+[2023-03-05T16:12:51.130] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/versions/2/rules
+[2023-03-05T16:12:51.130] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=53f397b4-d0d3-40dd-875b-74e598c4fbb6;
+
+[2023-03-05T16:12:51.130] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:51.130] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:51.130] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2/rules?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=53f397b4-d0d3-40dd-875b-74e598c4fbb6;" 
+
+[2023-03-05T16:12:51.131] [INFO] devops-prov.edgegrid.helpers - Signing key: jXMvPIwnCD8fvjGLFUYBd8GCi9WSQJBRVsi9MjaBP84=
+
+[2023-03-05T16:12:51.131] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=53f397b4-d0d3-40dd-875b-74e598c4fbb6;signature=kSjlVbl7jYJuzaz9wj/l7vO1u20nSnfOFKsOGHwQBsI=
+
+[2023-03-05T16:12:51.131] [INFO] devops-prov.edgegrid - request {
+  debugId: 6,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2/rules?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Accept: 'application/vnd.akamai.papirules.v2022-06-28+json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=53f397b4-d0d3-40dd-875b-74e598c4fbb6;signature=kSjlVbl7jYJuzaz9wj/l7vO1u20nSnfOFKsOGHwQBsI=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:51.522] [INFO] devops-prov.edgegrid - response {
+  debugId: 6,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '03a8967f-6fc3-457b-a728-1091b894dc4a, 03a8967f-6fc3-457b-a728-1091b894dc4a',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2/rules?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '982c640513e313b9',
+    'content-length': '128',
+    date: 'Sun, 05 Mar 2023 22:12:51 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795/versions/2/rules?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:12:51.522] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=385e9944-d424-4916-88a1-0a34490ac97d;
+
+[2023-03-05T16:12:51.522] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:51.522] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:51.523] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2/rules?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=385e9944-d424-4916-88a1-0a34490ac97d;" 
+
+[2023-03-05T16:12:51.523] [INFO] devops-prov.edgegrid.helpers - Signing key: jXMvPIwnCD8fvjGLFUYBd8GCi9WSQJBRVsi9MjaBP84=
+
+[2023-03-05T16:12:51.523] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=385e9944-d424-4916-88a1-0a34490ac97d;signature=DawnmULVxmdJ9hMnzBkhq58kAKm4mBQxEkjzRv9D/sg=
+
+[2023-03-05T16:12:51.524] [INFO] devops-prov.edgegrid - request {
+  debugId: 7,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2/rules?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Accept: 'application/vnd.akamai.papirules.v2022-06-28+json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:51+0000;nonce=385e9944-d424-4916-88a1-0a34490ac97d;signature=DawnmULVxmdJ9hMnzBkhq58kAKm4mBQxEkjzRv9D/sg=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:56.936] [INFO] devops-prov.edgegrid - response {
+  debugId: 7,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/vnd.akamai.papirules.v2022-06-28+json;charset=UTF-8',
+    'x-ids-session-id': '93ef61bd-3069-4306-81d0-595185778ecb, 93ef61bd-3069-4306-81d0-595185778ecb',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-elements-per-property-limit': '3000',
+    'x-limit-elements-per-property-remaining': '2979',
+    'x-limit-max-nested-rules-limit': '6',
+    'x-limit-max-nested-rules-remaining': '4',
+    'x-limit-matched-includes-per-property-limit': '300',
+    'x-limit-matched-includes-per-property-remaining': '300',
+    'x-limit-max-includes-at-default-rule-limit': '3',
+    'x-limit-max-includes-at-default-rule-remaining': '3',
+    'content-language': 'en-US',
+    link: '<https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/v0/schemas/products/prd_Fresca/v2022-06-28>; rel="describedby"',
+    vary: 'Accept, Accept-Encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': '91ca640513e113e8',
+    'content-length': '16980',
+    date: 'Sun, 05 Mar 2023 22:12:57 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "propertyId" : "prp_884795",\n' +
+    '  "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '  "propertyVersion" : 2,\n' +
+    '  "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",\n' +
+    '  "rules" : {\n' +
+    '    "name" : "default",\n' +
+    '    "children" : [ {\n' +
+    '      "name" : "Routing",\n' +
+    '      "children" : [ {\n' +
+    '        "name" : "Green Origin",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "origin",\n' +
+    '          "options" : {\n' +
+    '            "originType" : "CUSTOMER",\n' +
+    '            "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '            "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '            "compress" : true,\n' +
+    '            "enableTrueClientIp" : true,\n' +
+    '            "trueClientIpHeader" : "True-Client-IP",\n' +
+    '            "trueClientIpClientSetting" : false,\n' +
+    '            "verificationMode" : "CUSTOM",\n' +
+    '            "originSni" : true,\n' +
+    '            "httpPort" : 80,\n' +
+    '            "httpsPort" : 443,\n' +
+    '            "hostname" : "green.ialfaror.training.ranet.me",\n' +
+    '            "originCertificate" : "",\n' +
+    '            "ports" : "",\n' +
+    '            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '            "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "values" : [ "/origin1/" ],\n' +
+    '            "normalize" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : ""\n' +
+    '      }, {\n' +
+    '        "name" : "Blue Origin",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "origin",\n' +
+    '          "options" : {\n' +
+    '            "originType" : "CUSTOMER",\n' +
+    '            "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '            "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '            "compress" : true,\n' +
+    '            "enableTrueClientIp" : true,\n' +
+    '            "trueClientIpHeader" : "True-Client-IP",\n' +
+    '            "trueClientIpClientSetting" : false,\n' +
+    '            "verificationMode" : "CUSTOM",\n' +
+    '            "originSni" : true,\n' +
+    '            "httpPort" : 80,\n' +
+    '            "httpsPort" : 443,\n' +
+    '            "hostname" : "blue.ialfaror.training.ranet.me",\n' +
+    '            "originCertificate" : "",\n' +
+    '            "ports" : "",\n' +
+    '            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '            "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "values" : [ "/origin2/" ],\n' +
+    '            "normalize" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : ""\n' +
+    '      }, {\n' +
+    '        "name" : "Random 1/3",\n' +
+    '        "children" : [ {\n' +
+    '          "name" : "default origin",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "default.ialfaror.training.ranet.me",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "1" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        }, {\n' +
+    '          "name" : "green",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "green.ialfaror.training.ranet.me",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "2" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        }, {\n' +
+    '          "name" : "blue",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "blue.ialfaror.training.ranet.me",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "3" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        } ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "setVariable",\n' +
+    '          "options" : {\n' +
+    '            "valueSource" : "GENERATE",\n' +
+    '            "transform" : "NONE",\n' +
+    '            "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '            "generator" : "RAND",\n' +
+    '            "minRandomNumber" : "1",\n' +
+    '            "maxRandomNumber" : "3"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "values" : [ "/random/" ],\n' +
+    '            "normalize" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : ""\n' +
+    '      }, {\n' +
+    '        "name" : "Random 50/50",\n' +
+    '        "children" : [ {\n' +
+    '          "name" : "green",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "green.ialfaror.training.ranet.me",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "1" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        }, {\n' +
+    '          "name" : "blue",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n'... 6980 more characters
+}
+[2023-03-05T16:12:56.938] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:12:56.938] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "propertyId" : "prp_884795",
+  "propertyName" : "ialfaror.devops.ranet_pm",
+  "propertyVersion" : 2,
+  "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",
+  "rules" : {
+    "name" : "default",
+    "children" : [ {
+      "name" : "Routing",
+      "children" : [ {
+        "name" : "Green Origin",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "origin",
+          "options" : {
+            "originType" : "CUSTOMER",
+            "forwardHostHeader" : "REQUEST_HOST_HEADER",
+            "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+            "compress" : true,
+            "enableTrueClientIp" : true,
+            "trueClientIpHeader" : "True-Client-IP",
+            "trueClientIpClientSetting" : false,
+            "verificationMode" : "CUSTOM",
+            "originSni" : true,
+            "httpPort" : 80,
+            "httpsPort" : 443,
+            "hostname" : "green.ialfaror.training.ranet.me",
+            "originCertificate" : "",
+            "ports" : "",
+            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+            "standardCertificateAuthorities" : [ "akamai-permissive" ]
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/origin1/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Blue Origin",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "origin",
+          "options" : {
+            "originType" : "CUSTOMER",
+            "forwardHostHeader" : "REQUEST_HOST_HEADER",
+            "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+            "compress" : true,
+            "enableTrueClientIp" : true,
+            "trueClientIpHeader" : "True-Client-IP",
+            "trueClientIpClientSetting" : false,
+            "verificationMode" : "CUSTOM",
+            "originSni" : true,
+            "httpPort" : 80,
+            "httpsPort" : 443,
+            "hostname" : "blue.ialfaror.training.ranet.me",
+            "originCertificate" : "",
+            "ports" : "",
+            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+            "standardCertificateAuthorities" : [ "akamai-permissive" ]
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/origin2/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Random 1/3",
+        "children" : [ {
+          "name" : "default origin",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "default.ialfaror.training.ranet.me",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "1" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        }, {
+          "name" : "green",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "green.ialfaror.training.ranet.me",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "2" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        }, {
+          "name" : "blue",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "blue.ialfaror.training.ranet.me",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "3" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        } ],
+        "behaviors" : [ {
+          "name" : "setVariable",
+          "options" : {
+            "valueSource" : "GENERATE",
+            "transform" : "NONE",
+            "variableName" : "PMUSER_RANDOMORIGIN",
+            "generator" : "RAND",
+            "minRandomNumber" : "1",
+            "maxRandomNumber" : "3"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/random/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Random 50/50",
+        "children" : [ {
+          "name" : "green",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "green.ialfaror.training.ranet.me",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "1" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        }, {
+          "name" : "blue",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "blue.ialfaror.training.ranet.me",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "2" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        } ],
+        "behaviors" : [ {
+          "name" : "setVariable",
+          "options" : {
+            "valueSource" : "GENERATE",
+            "transform" : "NONE",
+            "variableName" : "PMUSER_RANDOMORIGIN",
+            "generator" : "RAND",
+            "minRandomNumber" : "1",
+            "maxRandomNumber" : "2"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/randomcolor/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    } ],
+    "behaviors" : [ {
+      "name" : "origin",
+      "options" : {
+        "originType" : "CUSTOMER",
+        "forwardHostHeader" : "REQUEST_HOST_HEADER",
+        "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+        "compress" : true,
+        "enableTrueClientIp" : true,
+        "trueClientIpHeader" : "True-Client-IP",
+        "trueClientIpClientSetting" : false,
+        "verificationMode" : "CUSTOM",
+        "originSni" : true,
+        "httpPort" : 80,
+        "httpsPort" : 443,
+        "hostname" : "default.ialfaror.training.ranet.me",
+        "originCertificate" : "",
+        "ports" : "",
+        "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+        "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+        "standardCertificateAuthorities" : [ "akamai-permissive" ]
+      }
+    }, {
+      "name" : "caching",
+      "options" : {
+        "behavior" : "NO_STORE"
+      }
+    }, {
+      "name" : "cpCode",
+      "options" : {
+        "value" : {
+          "id" : 1430518,
+          "description" : "ion.devops-training.ranet.me",
+          "products" : [ "Fresca" ],
+          "createdDate" : 1.674671504E12,
+          "cpCodeLimits" : null,
+          "name" : "ion.devops-training.ranet.me"
+        }
+      }
+    } ],
+    "options" : {
+      "is_secure" : true
+    },
+    "variables" : [ {
+      "name" : "PMUSER_RANDOMORIGIN",
+      "value" : "",
+      "description" : "Select a random number for Origin Routing Logic",
+      "hidden" : false,
+      "sensitive" : false
+    } ],
+    "comments" : ""
+  },
+  "warnings" : [ {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/0/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/1/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/2/children/0/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/2/children/1/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/2/children/2/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/3/children/0/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.ssl_custom_warning_test_staging",
+    "errorLocation" : "#/rules/children/0/children/3/children/1/behaviors/0",
+    "detail" : "If you are changing your `Origin Server` SSL Certificate Verification settings it is strongly recommended that you test on Staging before activating on Production. Failure to test on Staging may result in a service outage."
+  } ],
+  "ruleFormat" : "v2022-06-28",
+  "comments" : "RoutingLogic"
+}
+[2023-03-05T16:12:56.939] [INFO] pm-cli - Importing existing property with data:  {
+    "propertyName": "ialfaror.devops.ranet_pm",
+    "variableMode": "no-var",
+    "propertyId": 884795,
+    "propertyVersion": 2,
+    "groupId": 229585,
+    "contractId": "1-1NC95D",
+    "productId": "Fresca",
+    "secureOption": true
+}
+[2023-03-05T16:12:56.939] [INFO] pm-cli.project - creating property /Users/ialfaror/Documents/AaCTraining/RafaelLab/akamai-as-code-template/ialfaror.devops.ranet_pm
+[2023-03-05T16:12:56.941] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2023-03-05T16:12:56.941] [INFO] pm-cli.envionment - Checking latest version of 'ialfaror.devops.ranet_pm'
+[2023-03-05T16:12:56.941] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/versions/latest
+[2023-03-05T16:12:56.942] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:56+0000;nonce=df331e5b-ddf5-4239-bc37-c2d9f645da4f;
+
+[2023-03-05T16:12:56.942] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:56.942] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:56.942] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/latest?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:56+0000;nonce=df331e5b-ddf5-4239-bc37-c2d9f645da4f;" 
+
+[2023-03-05T16:12:56.942] [INFO] devops-prov.edgegrid.helpers - Signing key: YbouxZn/X1r2BeGDtxcpRPpVfQGW5calVZ9tTi260uk=
+
+[2023-03-05T16:12:56.942] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:56+0000;nonce=df331e5b-ddf5-4239-bc37-c2d9f645da4f;signature=0Q9rzcjA9Ie+s3Rs+3g6or0Ea96MeoUT75siFFiS4RI=
+
+[2023-03-05T16:12:56.943] [INFO] devops-prov.edgegrid - request {
+  debugId: 8,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/latest?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:56+0000;nonce=df331e5b-ddf5-4239-bc37-c2d9f645da4f;signature=0Q9rzcjA9Ie+s3Rs+3g6or0Ea96MeoUT75siFFiS4RI=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:57.836] [INFO] devops-prov.edgegrid - response {
+  debugId: 8,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '93ef61bd-3069-4306-81d0-595185778ecb, 93ef61bd-3069-4306-81d0-595185778ecb',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '9833640513e913ea',
+    'content-length': '90',
+    date: 'Sun, 05 Mar 2023 22:12:58 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:12:57.836] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:57+0000;nonce=1f72801d-63d7-4eb0-9589-1176403e5655;
+
+[2023-03-05T16:12:57.837] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:57.837] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:57.837] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:57+0000;nonce=1f72801d-63d7-4eb0-9589-1176403e5655;" 
+
+[2023-03-05T16:12:57.837] [INFO] devops-prov.edgegrid.helpers - Signing key: TjYPsC1+lipu1kF71/7B3h1mZthTj9vgAcDmBUn9To0=
+
+[2023-03-05T16:12:57.837] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:57+0000;nonce=1f72801d-63d7-4eb0-9589-1176403e5655;signature=0Twgi7/ohVDMWDEHaEYH4R5a4V8NKuCERGNdiR8Uu0Q=
+
+[2023-03-05T16:12:57.838] [INFO] devops-prov.edgegrid - request {
+  debugId: 9,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/prp_884795/versions/2?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:57+0000;nonce=1f72801d-63d7-4eb0-9589-1176403e5655;signature=0Twgi7/ohVDMWDEHaEYH4R5a4V8NKuCERGNdiR8Uu0Q=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:58.201] [INFO] devops-prov.edgegrid - response {
+  debugId: 9,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '93ef61bd-3069-4306-81d0-595185778ecb, 93ef61bd-3069-4306-81d0-595185778ecb',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '963b640513ea13ea',
+    'content-length': '122',
+    date: 'Sun, 05 Mar 2023 22:12:58 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:12:58.202] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:58+0000;nonce=8f7310b6-cde9-44f0-b9d5-db7dcc69cc79;
+
+[2023-03-05T16:12:58.202] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:58.202] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:58.202] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:58+0000;nonce=8f7310b6-cde9-44f0-b9d5-db7dcc69cc79;" 
+
+[2023-03-05T16:12:58.202] [INFO] devops-prov.edgegrid.helpers - Signing key: sCWZJ2ogVo6s+J6Nwvjc831vYm4oBYfz3W/UXea9YTg=
+
+[2023-03-05T16:12:58.202] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:58+0000;nonce=8f7310b6-cde9-44f0-b9d5-db7dcc69cc79;signature=Ydu1eCsLC5EuCw8qvq2SpOz5hd+TSsX0+oR5JBDB8y0=
+
+[2023-03-05T16:12:58.203] [INFO] devops-prov.edgegrid - request {
+  debugId: 10,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:58+0000;nonce=8f7310b6-cde9-44f0-b9d5-db7dcc69cc79;signature=Ydu1eCsLC5EuCw8qvq2SpOz5hd+TSsX0+oR5JBDB8y0=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:59.131] [INFO] devops-prov.edgegrid - response {
+  debugId: 10,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'bf23c6b4-a815-47f1-b6fd-e099d080b9db, bf23c6b4-a815-47f1-b6fd-e099d080b9db',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': '963b640513ea13ea',
+    'content-length': '593',
+    date: 'Sun, 05 Mar 2023 22:12:59 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884795",\n' +
+    '  "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "assetId" : "aid_11121212",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 2,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-04T05:21:55Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE",\n' +
+    '      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",\n' +
+    '      "productId" : "prd_Fresca",\n' +
+    '      "ruleFormat" : "v2022-06-28",\n' +
+    '      "note" : "RoutingLogic"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:12:59.131] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:12:59.131] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884795",
+  "propertyName" : "ialfaror.devops.ranet_pm",
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "assetId" : "aid_11121212",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 2,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-04T05:21:55Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE",
+      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",
+      "productId" : "prd_Fresca",
+      "ruleFormat" : "v2022-06-28",
+      "note" : "RoutingLogic"
+    } ]
+  }
+}
+[2023-03-05T16:12:59.131] [INFO] pm-cli.envionment - envInfo:  {
+  name: 'ialfaror.devops.ranet_pm',
+  propertyId: 884795,
+  propertyName: 'ialfaror.devops.ranet_pm',
+  groupId: 229585,
+  isSecure: true,
+  latestVersionInfo: {
+    propertyVersion: 2,
+    updatedByUser: 'ialfaror',
+    updatedDate: '2023-03-04T05:21:55Z',
+    productionStatus: 'INACTIVE',
+    stagingStatus: 'ACTIVE',
+    productId: 'prd_Fresca',
+    ruleFormat: 'v2022-06-28',
+    note: 'RoutingLogic'
+  }
+}
+[2023-03-05T16:12:59.133] [INFO] devops-prov.envionment - Getting property info
+[2023-03-05T16:12:59.133] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795
+[2023-03-05T16:12:59.133] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=2bd296b1-17ff-4279-9607-25ed12f81afe;
+
+[2023-03-05T16:12:59.134] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:59.134] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:59.134] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=2bd296b1-17ff-4279-9607-25ed12f81afe;" 
+
+[2023-03-05T16:12:59.134] [INFO] devops-prov.edgegrid.helpers - Signing key: EfU+gI/uezCBvK3wrM8HoFptYH6jmpCpqY4blG8s9pE=
+
+[2023-03-05T16:12:59.134] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=2bd296b1-17ff-4279-9607-25ed12f81afe;signature=G3IMvJgMIZwZa0a20WDQ7U9OojG3peoxUGm7GpNir+I=
+
+[2023-03-05T16:12:59.136] [INFO] devops-prov.el - parsing: boolean
+[2023-03-05T16:12:59.137] [INFO] devops-prov.el - parsing: enableCustomKey
+[2023-03-05T16:12:59.137] [INFO] devops-prov.el - parsing: /akamai/sure-route-test-object.html
+[2023-03-05T16:12:59.138] [INFO] devops-prov.el - parsing: url
+[2023-03-05T16:12:59.138] [INFO] devops-prov.el - parsing: sureRouteTestObject
+[2023-03-05T16:12:59.138] [INFO] devops-prov.el - parsing: /akamai/sure-route-test-object.html
+[2023-03-05T16:12:59.138] [INFO] devops-prov.el - parsing: origin-${environment.propertyName}
+[2023-03-05T16:12:59.139] [INFO] devops-prov.el - Replacing 'origin-${environment.propertyName}' with: 'origin-ialfaror.devops.ranet_pm'
+[2023-03-05T16:12:59.139] [INFO] devops-prov.el - parsing: hostname
+[2023-03-05T16:12:59.139] [INFO] devops-prov.el - parsing: originHostname
+[2023-03-05T16:12:59.139] [INFO] devops-prov.el - parsing: origin-${environment.propertyName}
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - Replacing 'origin-${environment.propertyName}' with: 'origin-ialfaror.devops.ranet_pm'
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: ${environment.propertyName}.download.akamai.com
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - Replacing '${environment.propertyName}.download.akamai.com' with: 'ialfaror.devops.ranet_pm.download.akamai.com'
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: netStorage
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: netStorageInfo
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: ${environment.propertyName}.download.akamai.com
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - Replacing '${environment.propertyName}.download.akamai.com' with: 'ialfaror.devops.ranet_pm.download.akamai.com'
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: INPUT_CPCODE_ID
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: cpCode
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: cpCode
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: compression.json
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: static.json
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: dynamic.json
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: performance.json
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: lfo.json
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: BYPASS
+[2023-03-05T16:12:59.140] [INFO] devops-prov.el - parsing: url
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: tier1MobileCompressionMethod
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: BYPASS
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: BYPASS
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: url
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: tier2MobileCompressionMethod
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: BYPASS
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: INPUT_FIREWALL_CONFIGURATION_VALUE
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: wafRule
+[2023-03-05T16:12:59.141] [INFO] devops-prov.el - parsing: firewallConfiguration
+[2023-03-05T16:12:59.141] [INFO] devops-prov.template - looking at rule: Routing
+[2023-03-05T16:12:59.143] [INFO] devops-prov.edgegrid - request {
+  debugId: 11,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=2bd296b1-17ff-4279-9607-25ed12f81afe;signature=G3IMvJgMIZwZa0a20WDQ7U9OojG3peoxUGm7GpNir+I=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:12:59.475] [INFO] devops-prov.edgegrid - response {
+  debugId: 11,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'aaac2ebb-79f4-4e60-a316-a47b4667a1de, aaac2ebb-79f4-4e60-a316-a47b4667a1de',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '94e6640513eb13e1',
+    'content-length': '111',
+    date: 'Sun, 05 Mar 2023 22:12:59 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:12:59.476] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=a6b62028-277d-4f78-987a-35bdef443a5f;
+
+[2023-03-05T16:12:59.476] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:12:59.476] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:12:59.476] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=a6b62028-277d-4f78-987a-35bdef443a5f;" 
+
+[2023-03-05T16:12:59.477] [INFO] devops-prov.edgegrid.helpers - Signing key: EfU+gI/uezCBvK3wrM8HoFptYH6jmpCpqY4blG8s9pE=
+
+[2023-03-05T16:12:59.477] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=a6b62028-277d-4f78-987a-35bdef443a5f;signature=zicSKAN3CLQkVGXruLWrx1/2Ou3XR1r+rE+w6s+Oxn8=
+
+[2023-03-05T16:12:59.478] [INFO] devops-prov.edgegrid - request {
+  debugId: 12,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:12:59+0000;nonce=a6b62028-277d-4f78-987a-35bdef443a5f;signature=zicSKAN3CLQkVGXruLWrx1/2Ou3XR1r+rE+w6s+Oxn8=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:00.147] [INFO] devops-prov.edgegrid - response {
+  debugId: 12,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'aaac2ebb-79f4-4e60-a316-a47b4667a1de, aaac2ebb-79f4-4e60-a316-a47b4667a1de',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': '94e6640513eb13e1',
+    'content-length': '364',
+    date: 'Sun, 05 Mar 2023 22:13:00 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "properties" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_1-6JHGX",\n' +
+    '      "contractId" : "ctr_1-1NC95D",\n' +
+    '      "groupId" : "grp_229585",\n' +
+    '      "propertyId" : "prp_884795",\n' +
+    '      "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '      "latestVersion" : 2,\n' +
+    '      "stagingVersion" : 2,\n' +
+    '      "productionVersion" : null,\n' +
+    '      "assetId" : "aid_11121212"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:13:00.148] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:13:00.148] [INFO] devops-prov.openclient - Body:  {
+  "properties" : {
+    "items" : [ {
+      "accountId" : "act_1-6JHGX",
+      "contractId" : "ctr_1-1NC95D",
+      "groupId" : "grp_229585",
+      "propertyId" : "prp_884795",
+      "propertyName" : "ialfaror.devops.ranet_pm",
+      "latestVersion" : 2,
+      "stagingVersion" : 2,
+      "productionVersion" : null,
+      "assetId" : "aid_11121212"
+    } ]
+  }
+}
+[2023-03-05T16:13:00.148] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/activations
+[2023-03-05T16:13:00.149] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=19e780b5-ea6e-40db-9291-971c96131b5c;
+
+[2023-03-05T16:13:00.149] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:00.149] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:00.149] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/activations?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=19e780b5-ea6e-40db-9291-971c96131b5c;" 
+
+[2023-03-05T16:13:00.149] [INFO] devops-prov.edgegrid.helpers - Signing key: vLckCYY3Glc0x/VtsiMLjeMK43FLyMV5BXv/33GNE3Y=
+
+[2023-03-05T16:13:00.149] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=19e780b5-ea6e-40db-9291-971c96131b5c;signature=b02EQsZVzQVXxbWx5FFTyVW4c/8kv7lDo86qm/RsYaQ=
+
+[2023-03-05T16:13:00.149] [INFO] devops-prov.edgegrid - request {
+  debugId: 13,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/activations?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=19e780b5-ea6e-40db-9291-971c96131b5c;signature=b02EQsZVzQVXxbWx5FFTyVW4c/8kv7lDo86qm/RsYaQ=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:00.556] [INFO] devops-prov.edgegrid - response {
+  debugId: 13,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '93ef61bd-3069-4306-81d0-595185778ecb, 93ef61bd-3069-4306-81d0-595185778ecb',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/activations?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '97b0640513ec13e6',
+    'content-length': '125',
+    date: 'Sun, 05 Mar 2023 22:13:00 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "activationLink" : "/papi/v1/properties/884795/activations?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:13:00.556] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=2d2b2203-0c5b-4723-bd89-8c1f6ba71f59;
+
+[2023-03-05T16:13:00.556] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:00.556] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:00.556] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/activations?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=2d2b2203-0c5b-4723-bd89-8c1f6ba71f59;" 
+
+[2023-03-05T16:13:00.556] [INFO] devops-prov.edgegrid.helpers - Signing key: vLckCYY3Glc0x/VtsiMLjeMK43FLyMV5BXv/33GNE3Y=
+
+[2023-03-05T16:13:00.556] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=2d2b2203-0c5b-4723-bd89-8c1f6ba71f59;signature=V71o+6MXC7jZSJdSv5zTBEm3yooKJp2mphZcc1EXtW0=
+
+[2023-03-05T16:13:00.557] [INFO] devops-prov.edgegrid - request {
+  debugId: 14,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/activations?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:00+0000;nonce=2d2b2203-0c5b-4723-bd89-8c1f6ba71f59;signature=V71o+6MXC7jZSJdSv5zTBEm3yooKJp2mphZcc1EXtW0=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:01.481] [INFO] devops-prov.edgegrid - response {
+  debugId: 14,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'aaac2ebb-79f4-4e60-a316-a47b4667a1de, aaac2ebb-79f4-4e60-a316-a47b4667a1de',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-ratelimit-activations-limit': '500',
+    'x-ratelimit-activations-remaining': '499',
+    'x-ratelimit-activations-reset': '2023-03-05T05:30:04Z',
+    vary: 'accept-encoding',
+    'x-trace-id': '9837640513ec13e6',
+    'content-length': '1631',
+    date: 'Sun, 05 Mar 2023 22:13:01 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "activations" : {\n' +
+    '    "items" : [ {\n' +
+    '      "activationId" : "atv_12749087",\n' +
+    '      "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '      "propertyId" : "prp_884795",\n' +
+    '      "propertyVersion" : 2,\n' +
+    '      "network" : "STAGING",\n' +
+    '      "activationType" : "ACTIVATE",\n' +
+    '      "status" : "ACTIVE",\n' +
+    '      "submitDate" : "2023-03-04T05:30:11Z",\n' +
+    '      "updateDate" : "2023-03-04T05:31:23Z",\n' +
+    '      "note" : "RoutingLogic",\n' +
+    '      "notifyEmails" : [ "ialfaror@akamai.com" ],\n' +
+    '      "fmaActivationState" : "steady",\n' +
+    '      "fallbackInfo" : {\n' +
+    '        "fastFallbackAttempted" : false,\n' +
+    '        "fallbackVersion" : 1,\n' +
+    '        "canFastFallback" : false,\n' +
+    '        "steadyStateTime" : 1677907883,\n' +
+    '        "fastFallbackExpirationTime" : 1677911483,\n' +
+    '        "fastFallbackRecoveryState" : null\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "activationId" : "atv_12635997",\n' +
+    '      "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '      "propertyId" : "prp_884795",\n' +
+    '      "propertyVersion" : 1,\n' +
+    '      "network" : "STAGING",\n' +
+    '      "activationType" : "ACTIVATE",\n' +
+    '      "status" : "ACTIVE",\n' +
+    '      "submitDate" : "2023-02-13T05:36:17Z",\n' +
+    '      "updateDate" : "2023-02-13T05:37:50Z",\n' +
+    '      "note" : "DevOpsTrainingInitialconfig",\n' +
+    '      "notifyEmails" : [ "ialfaror@akamai.com" ],\n' +
+    '      "fmaActivationState" : "steady",\n' +
+    '      "fallbackInfo" : {\n' +
+    '        "fastFallbackAttempted" : false,\n' +
+    '        "fallbackVersion" : 2,\n' +
+    '        "canFastFallback" : false,\n' +
+    '        "steadyStateTime" : 1676266670,\n' +
+    '        "fastFallbackExpirationTime" : 1676270270,\n' +
+    '        "fastFallbackRecoveryState" : null\n' +
+    '      }\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:13:01.481] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:13:01.481] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "activations" : {
+    "items" : [ {
+      "activationId" : "atv_12749087",
+      "propertyName" : "ialfaror.devops.ranet_pm",
+      "propertyId" : "prp_884795",
+      "propertyVersion" : 2,
+      "network" : "STAGING",
+      "activationType" : "ACTIVATE",
+      "status" : "ACTIVE",
+      "submitDate" : "2023-03-04T05:30:11Z",
+      "updateDate" : "2023-03-04T05:31:23Z",
+      "note" : "RoutingLogic",
+      "notifyEmails" : [ "ialfaror@akamai.com" ],
+      "fmaActivationState" : "steady",
+      "fallbackInfo" : {
+        "fastFallbackAttempted" : false,
+        "fallbackVersion" : 1,
+        "canFastFallback" : false,
+        "steadyStateTime" : 1677907883,
+        "fastFallbackExpirationTime" : 1677911483,
+        "fastFallbackRecoveryState" : null
+      }
+    }, {
+      "activationId" : "atv_12635997",
+      "propertyName" : "ialfaror.devops.ranet_pm",
+      "propertyId" : "prp_884795",
+      "propertyVersion" : 1,
+      "network" : "STAGING",
+      "activationType" : "ACTIVATE",
+      "status" : "ACTIVE",
+      "submitDate" : "2023-02-13T05:36:17Z",
+      "updateDate" : "2023-02-13T05:37:50Z",
+      "note" : "DevOpsTrainingInitialconfig",
+      "notifyEmails" : [ "ialfaror@akamai.com" ],
+      "fmaActivationState" : "steady",
+      "fallbackInfo" : {
+        "fastFallbackAttempted" : false,
+        "fallbackVersion" : 2,
+        "canFastFallback" : false,
+        "steadyStateTime" : 1676266670,
+        "fastFallbackExpirationTime" : 1676270270,
+        "fastFallbackRecoveryState" : null
+      }
+    } ]
+  }
+}
+[2023-03-05T16:13:01.482] [INFO] devops-prov.envionment - getting latest staging info
+[2023-03-05T16:13:01.482] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/versions/2
+[2023-03-05T16:13:01.482] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=2ee222d9-7285-4f2c-94c2-0b0d1507d255;
+
+[2023-03-05T16:13:01.482] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:01.482] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:01.482] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=2ee222d9-7285-4f2c-94c2-0b0d1507d255;" 
+
+[2023-03-05T16:13:01.482] [INFO] devops-prov.edgegrid.helpers - Signing key: I3tMKj16o0sWTyhytBO7UMcAVJNLyuC4Bewnf/CXhoE=
+
+[2023-03-05T16:13:01.482] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=2ee222d9-7285-4f2c-94c2-0b0d1507d255;signature=xpodus5VmnSrPNTRL3Of4PMRTcQT/4E0lMg1aIxX8Y8=
+
+[2023-03-05T16:13:01.483] [INFO] devops-prov.edgegrid - request {
+  debugId: 15,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=2ee222d9-7285-4f2c-94c2-0b0d1507d255;signature=xpodus5VmnSrPNTRL3Of4PMRTcQT/4E0lMg1aIxX8Y8=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:01.784] [INFO] devops-prov.edgegrid - response {
+  debugId: 15,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'aaac2ebb-79f4-4e60-a316-a47b4667a1de, aaac2ebb-79f4-4e60-a316-a47b4667a1de',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '94e6640513ed13e2',
+    'content-length': '122',
+    date: 'Sun, 05 Mar 2023 22:13:01 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:13:01.784] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=f47c1e36-d73c-43a9-8993-c2d964cc0894;
+
+[2023-03-05T16:13:01.784] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:01.784] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:01.784] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=f47c1e36-d73c-43a9-8993-c2d964cc0894;" 
+
+[2023-03-05T16:13:01.785] [INFO] devops-prov.edgegrid.helpers - Signing key: I3tMKj16o0sWTyhytBO7UMcAVJNLyuC4Bewnf/CXhoE=
+
+[2023-03-05T16:13:01.785] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=f47c1e36-d73c-43a9-8993-c2d964cc0894;signature=M98kgvLex+t2f3sBwXo6NOflD9KRrGTEzFj48vQffVA=
+
+[2023-03-05T16:13:01.786] [INFO] devops-prov.edgegrid - request {
+  debugId: 16,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:01+0000;nonce=f47c1e36-d73c-43a9-8993-c2d964cc0894;signature=M98kgvLex+t2f3sBwXo6NOflD9KRrGTEzFj48vQffVA=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:02.708] [INFO] devops-prov.edgegrid - response {
+  debugId: 16,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '93ef61bd-3069-4306-81d0-595185778ecb, 93ef61bd-3069-4306-81d0-595185778ecb',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': '97b0640513ed13e6',
+    'content-length': '593',
+    date: 'Sun, 05 Mar 2023 22:13:02 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884795",\n' +
+    '  "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "assetId" : "aid_11121212",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 2,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-04T05:21:55Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE",\n' +
+    '      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",\n' +
+    '      "productId" : "prd_Fresca",\n' +
+    '      "ruleFormat" : "v2022-06-28",\n' +
+    '      "note" : "RoutingLogic"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:13:02.708] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:13:02.708] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884795",
+  "propertyName" : "ialfaror.devops.ranet_pm",
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "assetId" : "aid_11121212",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 2,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-04T05:21:55Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE",
+      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",
+      "productId" : "prd_Fresca",
+      "ruleFormat" : "v2022-06-28",
+      "note" : "RoutingLogic"
+    } ]
+  }
+}
+[2023-03-05T16:13:02.709] [INFO] devops-prov.envionment - getting latest production info
+[2023-03-05T16:13:02.709] [INFO] devops-prov.envionment - getting latest version info
+[2023-03-05T16:13:02.709] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/versions/2
+[2023-03-05T16:13:02.709] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:02+0000;nonce=ba9ebde1-f6de-4e8d-a9b8-282870b3edeb;
+
+[2023-03-05T16:13:02.709] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:02.709] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:02.709] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:02+0000;nonce=ba9ebde1-f6de-4e8d-a9b8-282870b3edeb;" 
+
+[2023-03-05T16:13:02.709] [INFO] devops-prov.edgegrid.helpers - Signing key: 2fotmNx2uIwSj/QMB87kZsCkh2EdCspnIWkMoj1fQ0M=
+
+[2023-03-05T16:13:02.709] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:02+0000;nonce=ba9ebde1-f6de-4e8d-a9b8-282870b3edeb;signature=jdqf2v5IHi3cnnXnf37CD+x/fkwKkxPu5kqCEBnHsvM=
+
+[2023-03-05T16:13:02.710] [INFO] devops-prov.edgegrid - request {
+  debugId: 17,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:02+0000;nonce=ba9ebde1-f6de-4e8d-a9b8-282870b3edeb;signature=jdqf2v5IHi3cnnXnf37CD+x/fkwKkxPu5kqCEBnHsvM=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:03.117] [INFO] devops-prov.edgegrid - response {
+  debugId: 17,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'aaac2ebb-79f4-4e60-a316-a47b4667a1de, aaac2ebb-79f4-4e60-a316-a47b4667a1de',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '9692640513ef1441',
+    'content-length': '122',
+    date: 'Sun, 05 Mar 2023 22:13:03 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:13:03.117] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:03+0000;nonce=b49b14a3-9d20-48fc-8445-99d5511cfe7d;
+
+[2023-03-05T16:13:03.117] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:03.117] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:03.117] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:03+0000;nonce=b49b14a3-9d20-48fc-8445-99d5511cfe7d;" 
+
+[2023-03-05T16:13:03.117] [INFO] devops-prov.edgegrid.helpers - Signing key: lSI1X9Aa+69N208+HMMcqNzAmnZvmjmuA5uXGT6GxNI=
+
+[2023-03-05T16:13:03.117] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:03+0000;nonce=b49b14a3-9d20-48fc-8445-99d5511cfe7d;signature=OvgLpRriL4scpTsNJc58D8MLZwgeBSvo4xhzDhCBbBI=
+
+[2023-03-05T16:13:03.118] [INFO] devops-prov.edgegrid - request {
+  debugId: 18,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:03+0000;nonce=b49b14a3-9d20-48fc-8445-99d5511cfe7d;signature=OvgLpRriL4scpTsNJc58D8MLZwgeBSvo4xhzDhCBbBI=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:04.000] [INFO] devops-prov.edgegrid - response {
+  debugId: 18,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'bf23c6b4-a815-47f1-b6fd-e099d080b9db, bf23c6b4-a815-47f1-b6fd-e099d080b9db',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': '97b0640513ee13e7',
+    'content-length': '593',
+    date: 'Sun, 05 Mar 2023 22:13:04 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884795",\n' +
+    '  "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "assetId" : "aid_11121212",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 2,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-04T05:21:55Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE",\n' +
+    '      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",\n' +
+    '      "productId" : "prd_Fresca",\n' +
+    '      "ruleFormat" : "v2022-06-28",\n' +
+    '      "note" : "RoutingLogic"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:13:04.000] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:13:04.000] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884795",
+  "propertyName" : "ialfaror.devops.ranet_pm",
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "assetId" : "aid_11121212",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 2,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-04T05:21:55Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE",
+      "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",
+      "productId" : "prd_Fresca",
+      "ruleFormat" : "v2022-06-28",
+      "note" : "RoutingLogic"
+    } ]
+  }
+}
+[2023-03-05T16:13:04.001] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true
+[2023-03-05T16:13:04.001] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=f8ae2ddc-d1eb-4cb4-9972-fc50664f21d5;
+
+[2023-03-05T16:13:04.001] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:04.002] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:04.002] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=f8ae2ddc-d1eb-4cb4-9972-fc50664f21d5;" 
+
+[2023-03-05T16:13:04.002] [INFO] devops-prov.edgegrid.helpers - Signing key: R/D+Ba5bOyBLTf0uDv4/DHgiLb2AOJm/QjR8Yp2AeIg=
+
+[2023-03-05T16:13:04.002] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=f8ae2ddc-d1eb-4cb4-9972-fc50664f21d5;signature=hrTyg+IN5knOMrvOpdNjPiMDYMDXTAwrr5fvjA+Yf6c=
+
+[2023-03-05T16:13:04.002] [INFO] devops-prov.edgegrid - request {
+  debugId: 19,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=f8ae2ddc-d1eb-4cb4-9972-fc50664f21d5;signature=hrTyg+IN5knOMrvOpdNjPiMDYMDXTAwrr5fvjA+Yf6c=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:04.447] [INFO] devops-prov.edgegrid - response {
+  debugId: 19,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '03a8967f-6fc3-457b-a728-1091b894dc4a, 03a8967f-6fc3-457b-a728-1091b894dc4a',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true&groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '97b0640513f013e7',
+    'content-length': '155',
+    date: 'Sun, 05 Mar 2023 22:13:04 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true&groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-05T16:13:04.448] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=7e21ff00-059d-4103-a3f1-8746b0ad3d24;
+
+[2023-03-05T16:13:04.448] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-05T16:13:04.448] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-05T16:13:04.448] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true&groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=7e21ff00-059d-4103-a3f1-8746b0ad3d24;" 
+
+[2023-03-05T16:13:04.448] [INFO] devops-prov.edgegrid.helpers - Signing key: R/D+Ba5bOyBLTf0uDv4/DHgiLb2AOJm/QjR8Yp2AeIg=
+
+[2023-03-05T16:13:04.448] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=7e21ff00-059d-4103-a3f1-8746b0ad3d24;signature=T/On0fPkBk9RoO/ePdmgAISh6g7AnfWndUxGU+IEXG8=
+
+[2023-03-05T16:13:04.449] [INFO] devops-prov.edgegrid - request {
+  debugId: 20,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/884795/versions/2/hostnames?includeCertStatus=true&groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230305T22:13:04+0000;nonce=7e21ff00-059d-4103-a3f1-8746b0ad3d24;signature=T/On0fPkBk9RoO/ePdmgAISh6g7AnfWndUxGU+IEXG8=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-05T16:13:06.672] [INFO] devops-prov.edgegrid - response {
+  debugId: 20,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '03a8967f-6fc3-457b-a728-1091b894dc4a, 03a8967f-6fc3-457b-a728-1091b894dc4a',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-hosts-per-property-limit': '1000',
+    'x-limit-hosts-per-property-remaining': '998',
+    etag: '"65d90b8830405db4baa9c70f69265ec07fe0a72b"',
+    vary: 'accept-encoding',
+    'x-trace-id': '97b0640513f013e7',
+    'content-length': '786',
+    date: 'Sun, 05 Mar 2023 22:13:06 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "propertyId" : "prp_884795",\n' +
+    '  "propertyName" : "ialfaror.devops.ranet_pm",\n' +
+    '  "propertyVersion" : 2,\n' +
+    '  "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",\n' +
+    '  "hostnames" : {\n' +
+    '    "items" : [ {\n' +
+    '      "cnameType" : "EDGE_HOSTNAME",\n' +
+    '      "edgeHostnameId" : "ehn_1039711",\n' +
+    '      "cnameFrom" : "rolotest1.crtestns.com.edgekey-staging.net",\n' +
+    '      "cnameTo" : "rolotest1.crtestns.com.edgekey.net",\n' +
+    '      "certProvisioningType" : "CPS_MANAGED"\n' +
+    '    }, {\n' +
+    '      "cnameType" : "EDGE_HOSTNAME",\n' +
+    '      "edgeHostnameId" : "ehn_1039711",\n' +
+    '      "cnameFrom" : "www.ialfaror.training.ranet.me",\n' +
+    '      "cnameTo" : "rolotest1.crtestns.com.edgekey.net",\n' +
+    '      "certProvisioningType" : "CPS_MANAGED"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-05T16:13:06.672] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-05T16:13:06.672] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "propertyId" : "prp_884795",
+  "propertyName" : "ialfaror.devops.ranet_pm",
+  "propertyVersion" : 2,
+  "etag" : "65d90b8830405db4baa9c70f69265ec07fe0a72b",
+  "hostnames" : {
+    "items" : [ {
+      "cnameType" : "EDGE_HOSTNAME",
+      "edgeHostnameId" : "ehn_1039711",
+      "cnameFrom" : "rolotest1.crtestns.com.edgekey-staging.net",
+      "cnameTo" : "rolotest1.crtestns.com.edgekey.net",
+      "certProvisioningType" : "CPS_MANAGED"
+    }, {
+      "cnameType" : "EDGE_HOSTNAME",
+      "edgeHostnameId" : "ehn_1039711",
+      "cnameFrom" : "www.ialfaror.training.ranet.me",
+      "cnameTo" : "rolotest1.crtestns.com.edgekey.net",
+      "certProvisioningType" : "CPS_MANAGED"
+    } ]
+  }
+}
+[2023-03-05T16:13:06.672] [DEBUG] devops-prov.edgehostname-manager - cleaning hostname ids

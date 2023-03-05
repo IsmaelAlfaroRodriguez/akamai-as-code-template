@@ -1,33 +1,458 @@
 {
-    "accountId": "1-6JHGX",
+    "accountId": "act_1-6JHGX",
     "contractId": "ctr_1-1NC95D",
     "groupId": "grp_229585",
-    "ruleFormat": "latest",
+    "ruleFormat": "v2022-06-28",
     "propertyId": "prp_884795",
     "propertyName": "ialfaror.devops.ranet_pm",
-    "propertyVersion": 1,
+    "propertyVersion": 2,
     "rules": {
         "name": "default",
         "children": [
+            {
+                "name": "Routing",
+                "children": [
+                    {
+                        "name": "Green Origin",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "origin",
+                                "options": {
+                                    "originType": "CUSTOMER",
+                                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                    "compress": true,
+                                    "enableTrueClientIp": true,
+                                    "trueClientIpHeader": "True-Client-IP",
+                                    "trueClientIpClientSetting": false,
+                                    "verificationMode": "CUSTOM",
+                                    "originSni": true,
+                                    "httpPort": 80,
+                                    "httpsPort": 443,
+                                    "hostname": "green.ialfaror.training.ranet.me",
+                                    "originCertificate": "",
+                                    "ports": "",
+                                    "customValidCnValues": [
+                                        "{{Origin Hostname}}",
+                                        "{{Forward Host Header}}"
+                                    ],
+                                    "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                    "standardCertificateAuthorities": [
+                                        "akamai-permissive"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "path",
+                                "options": {
+                                    "matchOperator": "MATCHES_ONE_OF",
+                                    "matchCaseSensitive": false,
+                                    "values": [
+                                        "/origin1/"
+                                    ],
+                                    "normalize": false
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all",
+                        "comments": ""
+                    },
+                    {
+                        "name": "Blue Origin",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "origin",
+                                "options": {
+                                    "originType": "CUSTOMER",
+                                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                    "compress": true,
+                                    "enableTrueClientIp": true,
+                                    "trueClientIpHeader": "True-Client-IP",
+                                    "trueClientIpClientSetting": false,
+                                    "verificationMode": "CUSTOM",
+                                    "originSni": true,
+                                    "httpPort": 80,
+                                    "httpsPort": 443,
+                                    "hostname": "blue.ialfaror.training.ranet.me",
+                                    "originCertificate": "",
+                                    "ports": "",
+                                    "customValidCnValues": [
+                                        "{{Origin Hostname}}",
+                                        "{{Forward Host Header}}"
+                                    ],
+                                    "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                    "standardCertificateAuthorities": [
+                                        "akamai-permissive"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "path",
+                                "options": {
+                                    "matchOperator": "MATCHES_ONE_OF",
+                                    "matchCaseSensitive": false,
+                                    "values": [
+                                        "/origin2/"
+                                    ],
+                                    "normalize": false
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all",
+                        "comments": ""
+                    },
+                    {
+                        "name": "Random 1/3",
+                        "children": [
+                            {
+                                "name": "default origin",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "origin",
+                                        "options": {
+                                            "originType": "CUSTOMER",
+                                            "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                            "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                            "compress": true,
+                                            "enableTrueClientIp": true,
+                                            "trueClientIpHeader": "True-Client-IP",
+                                            "trueClientIpClientSetting": false,
+                                            "verificationMode": "CUSTOM",
+                                            "originSni": true,
+                                            "httpPort": 80,
+                                            "httpsPort": 443,
+                                            "hostname": "default.ialfaror.training.ranet.me",
+                                            "originCertificate": "",
+                                            "ports": "",
+                                            "customValidCnValues": [
+                                                "{{Origin Hostname}}",
+                                                "{{Forward Host Header}}"
+                                            ],
+                                            "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                            "standardCertificateAuthorities": [
+                                                "akamai-permissive"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "matchVariable",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "matchWildcard": false,
+                                            "matchCaseSensitive": true,
+                                            "variableName": "PMUSER_RANDOMORIGIN",
+                                            "variableValues": [
+                                                "1"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all",
+                                "comments": ""
+                            },
+                            {
+                                "name": "green",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "origin",
+                                        "options": {
+                                            "originType": "CUSTOMER",
+                                            "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                            "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                            "compress": true,
+                                            "enableTrueClientIp": true,
+                                            "trueClientIpHeader": "True-Client-IP",
+                                            "trueClientIpClientSetting": false,
+                                            "verificationMode": "CUSTOM",
+                                            "originSni": true,
+                                            "httpPort": 80,
+                                            "httpsPort": 443,
+                                            "hostname": "green.ialfaror.training.ranet.me",
+                                            "originCertificate": "",
+                                            "ports": "",
+                                            "customValidCnValues": [
+                                                "{{Origin Hostname}}",
+                                                "{{Forward Host Header}}"
+                                            ],
+                                            "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                            "standardCertificateAuthorities": [
+                                                "akamai-permissive"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "matchVariable",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "matchWildcard": false,
+                                            "matchCaseSensitive": true,
+                                            "variableName": "PMUSER_RANDOMORIGIN",
+                                            "variableValues": [
+                                                "2"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all",
+                                "comments": ""
+                            },
+                            {
+                                "name": "blue",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "origin",
+                                        "options": {
+                                            "originType": "CUSTOMER",
+                                            "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                            "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                            "compress": true,
+                                            "enableTrueClientIp": true,
+                                            "trueClientIpHeader": "True-Client-IP",
+                                            "trueClientIpClientSetting": false,
+                                            "verificationMode": "CUSTOM",
+                                            "originSni": true,
+                                            "httpPort": 80,
+                                            "httpsPort": 443,
+                                            "hostname": "blue.ialfaror.training.ranet.me",
+                                            "originCertificate": "",
+                                            "ports": "",
+                                            "customValidCnValues": [
+                                                "{{Origin Hostname}}",
+                                                "{{Forward Host Header}}"
+                                            ],
+                                            "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                            "standardCertificateAuthorities": [
+                                                "akamai-permissive"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "matchVariable",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "matchWildcard": false,
+                                            "matchCaseSensitive": true,
+                                            "variableName": "PMUSER_RANDOMORIGIN",
+                                            "variableValues": [
+                                                "3"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all",
+                                "comments": ""
+                            }
+                        ],
+                        "behaviors": [
+                            {
+                                "name": "setVariable",
+                                "options": {
+                                    "valueSource": "GENERATE",
+                                    "transform": "NONE",
+                                    "variableName": "PMUSER_RANDOMORIGIN",
+                                    "generator": "RAND",
+                                    "minRandomNumber": "1",
+                                    "maxRandomNumber": "3"
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "path",
+                                "options": {
+                                    "matchOperator": "MATCHES_ONE_OF",
+                                    "matchCaseSensitive": false,
+                                    "values": [
+                                        "/random/"
+                                    ],
+                                    "normalize": false
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all",
+                        "comments": ""
+                    },
+                    {
+                        "name": "Random 50/50",
+                        "children": [
+                            {
+                                "name": "green",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "origin",
+                                        "options": {
+                                            "originType": "CUSTOMER",
+                                            "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                            "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                            "compress": true,
+                                            "enableTrueClientIp": true,
+                                            "trueClientIpHeader": "True-Client-IP",
+                                            "trueClientIpClientSetting": false,
+                                            "verificationMode": "CUSTOM",
+                                            "originSni": true,
+                                            "httpPort": 80,
+                                            "httpsPort": 443,
+                                            "hostname": "green.ialfaror.training.ranet.me",
+                                            "originCertificate": "",
+                                            "ports": "",
+                                            "customValidCnValues": [
+                                                "{{Origin Hostname}}",
+                                                "{{Forward Host Header}}"
+                                            ],
+                                            "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                            "standardCertificateAuthorities": [
+                                                "akamai-permissive"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "matchVariable",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "matchWildcard": false,
+                                            "matchCaseSensitive": true,
+                                            "variableName": "PMUSER_RANDOMORIGIN",
+                                            "variableValues": [
+                                                "1"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all",
+                                "comments": ""
+                            },
+                            {
+                                "name": "blue",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "origin",
+                                        "options": {
+                                            "originType": "CUSTOMER",
+                                            "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                            "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                            "compress": true,
+                                            "enableTrueClientIp": true,
+                                            "trueClientIpHeader": "True-Client-IP",
+                                            "trueClientIpClientSetting": false,
+                                            "verificationMode": "CUSTOM",
+                                            "originSni": true,
+                                            "httpPort": 80,
+                                            "httpsPort": 443,
+                                            "hostname": "blue.ialfaror.training.ranet.me",
+                                            "originCertificate": "",
+                                            "ports": "",
+                                            "customValidCnValues": [
+                                                "{{Origin Hostname}}",
+                                                "{{Forward Host Header}}"
+                                            ],
+                                            "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                                            "standardCertificateAuthorities": [
+                                                "akamai-permissive"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "matchVariable",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "matchWildcard": false,
+                                            "matchCaseSensitive": true,
+                                            "variableName": "PMUSER_RANDOMORIGIN",
+                                            "variableValues": [
+                                                "2"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all",
+                                "comments": ""
+                            }
+                        ],
+                        "behaviors": [
+                            {
+                                "name": "setVariable",
+                                "options": {
+                                    "valueSource": "GENERATE",
+                                    "transform": "NONE",
+                                    "variableName": "PMUSER_RANDOMORIGIN",
+                                    "generator": "RAND",
+                                    "minRandomNumber": "1",
+                                    "maxRandomNumber": "2"
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "path",
+                                "options": {
+                                    "matchOperator": "MATCHES_ONE_OF",
+                                    "matchCaseSensitive": false,
+                                    "values": [
+                                        "/randomcolor/"
+                                    ],
+                                    "normalize": false
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all",
+                        "comments": ""
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all",
+                "comments": ""
+            }
         ],
         "behaviors": [
             {
                 "name": "origin",
                 "options": {
+                    "originType": "CUSTOMER",
+                    "forwardHostHeader": "REQUEST_HOST_HEADER",
                     "cacheKeyHostname": "REQUEST_HOST_HEADER",
                     "compress": true,
                     "enableTrueClientIp": true,
-                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false,
+                    "verificationMode": "CUSTOM",
+                    "originSni": true,
                     "httpPort": 80,
                     "httpsPort": 443,
+                    "hostname": "default.ialfaror.training.ranet.me",
                     "originCertificate": "",
-                    "originSni": true,
-                    "originType": "CUSTOMER",
                     "ports": "",
-                    "trueClientIpClientSetting": false,
-                    "trueClientIpHeader": "True-Client-IP",
-                    "verificationMode": "PLATFORM_SETTINGS",
-                    "hostname": "default.ialfaror.training.ranet.me"
+                    "customValidCnValues": [
+                        "{{Origin Hostname}}",
+                        "{{Forward Host Header}}"
+                    ],
+                    "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                    "standardCertificateAuthorities": [
+                        "akamai-permissive"
+                    ],
+                    "ipVersion": "IPV4"
                 }
             },
             {
@@ -55,7 +480,15 @@
         "options": {
             "is_secure": true
         },
-        "variables": [],
+        "variables": [
+            {
+                "name": "PMUSER_RANDOMORIGIN",
+                "value": "",
+                "description": "Select a random number for Origin Routing Logic",
+                "hidden": false,
+                "sensitive": false
+            }
+        ],
         "comments": ""
     }
 }
